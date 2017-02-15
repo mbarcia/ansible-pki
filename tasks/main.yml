@@ -29,6 +29,7 @@
           else [] }}'
     - '{{ pki_packages }}'
   when: pki_enabled | bool
+  tags: [ 'meta::provision' ]
 # .. ]]]
 
 # Assert that required dependencies are met as documented [[[
